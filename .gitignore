@@ -20,3 +20,4 @@
 
 # Mac finder artifacts
 .DS_Store
+/public/assets/source_maps
