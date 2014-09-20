@@ -1,0 +1,14 @@
+!!!
+%html{lang: :ja}
+  %head
+    %meta{charset: "utf-8"}
+    %title= content_for?(:title) ? "#{yield(:title)} - distan" : "distan - ２点間の距離を測るよ！"
+    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
+    %script{src: "http://maps.googleapis.com/maps/api/js?key=AIzaSyCId3kTGab0QR55aV2apbgq60sRYoN5WAA&sensor=false"}
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    %meta{content: "width=device-width, initial-scale=1.0", name: "viewport"}
+    = csrf_meta_tags
+  %body
+    .body
+      .container
+        = yield
