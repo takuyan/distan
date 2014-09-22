@@ -1,2 +1,31 @@
-%h1 Main#index
-%p Find me in app/views/main/index.html.haml
+.page-header
+  %h1 ２点間の距離を測るよ！
+
+.row
+  .col-md-6
+    #from
+      %form.form-inline.from__form
+        .form-group
+          %label.sr-only{for: :from_input} どこから
+          %input#from_input.form-control{value: '代々木公園'}
+        %button.btn.btn-default{type: :submit}
+          検索
+
+      #from__map.map
+
+  .col-md-6
+    #to
+      %form.form-inline.to__form
+        .form-group
+          %label.sr-only{for: :to_input} どこまで
+          %input#to_input.form-control{value: '東京駅'}
+        %button.btn.btn-default{type: :submit}
+          検索
+      #to__map.map
+
+.row
+  .col-md-12
+    %h2#result
+      100
+      %span
+        km

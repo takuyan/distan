@@ -5,4 +5,5 @@
 #= require underscore
 #= require backbone
 #= require distan
+#= require_tree ./views
 #= require turbolinks

@@ -1,7 +1,6 @@
 window.Distan =
-  Module: {}
+  Views: {}
   initialize: ->
-    console.log 'distan start'
 
 $(document).ready ->
   Distan.initialize()
